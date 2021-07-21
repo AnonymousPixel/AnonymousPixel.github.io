@@ -1,13 +1,13 @@
 - 👋 Hi, I’m @AnonymousPixel
-- 👀 I’m interested in 
-  -⌨️Programming,
-  -🎮Gaming,
-  -☕Coffee
-- 🌱 I’m currently learning
-  -Advanced python concepts,
-  -Lua,
-  -C#
-- 📫 How to reach me 
+- 👀 I’m interested in   
+  -⌨️Programming,  
+  -🎮Gaming,  
+  -☕Coffee  
+- 🌱 I’m currently learning  
+  -Advanced python concepts,  
+  -Lua,  
+  -C#  
+- 📫 How to reach me   
   -Discord: BlueWarrior103#0377
 
 <!---
