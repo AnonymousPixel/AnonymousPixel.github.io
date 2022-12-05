@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+		<meta name="title" content="{{name}}">
+		<meta name="description" content="{{text}}">
+		<meta name="keywords" content="Portfolio, Programming, Anonymouspixel, Projects">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="author" content="Anonymuspixel">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AnonymousPixel's Portfolio</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css" />
+		<script src="https://kit.fontawesome.com/f8a6e1b6b2.js" crossorigin="anonymous"></script>
+		<style>
+			img{
+				height:25vh;
+				margin-bottom:0;
+			}
+			p.t{
+				margin-top:0;
+			}
+		</style>
+		<script>
+			function showOverlay(){
+				document.querySelector(".overlay").style.display = "block";
+			}
+			function hideOverlay(){
+				document.querySelector(".overlay").style.display = "none";
+			}
+		</script>
+  </head>
+  <body>
+		{% if img != "/static/Images/" %}
+		<div class="overlay"><img src="{{img}}"><button class="close" onclick="hideOverlay()">✕</button></div>
+		{% endif %}
+		<div class="header">
+			<H1>AnonymousPixel</H1>
+		</div>
+			<div class="topbar">
+				<a href="{{url_for('render')}}">Projects</a>
+        |
+				<a href="{{url_for('renderam')}}">About me</a>
+        |
+				<a href="{{url_for('random')}}">Random Project</a>
+			</div>
+			<div class="content">
+				<h1>{{name}}</h1>
+				<p style="margin:5px;">{{text}}{% if link and ltext %} <a target="_blank" href={{link}}>{{ltext}}</a>{% endif %}</p>
+				{% if version %}
+        <p>Original version: {{version}}</p>
+				{% endif %}
+				{% if features %}
+				<h2>Features:</h2>
+				<ul>
+					{% for f in features %}
+            <li>-{{ f }}</a></li>
+        	{% endfor %}
+				</ul>
+				{% endif %}
+				{% if img != "/static/Images/" %}
+				<img src="{{img}}" class="nimg" onclick="showOverlay()">
+				<p class="t" style="color:rgba(100,100,100,0.9);"><i>Click on the image to enlarge it.</i></p>
+				{% endif %}
+        {% if text2 %}
+        <p style="margin:5px;">{{text2}}</p>
+        {% endif %}
+				<div style="width:100vw; height:10px;" />
+				<!--style="width:50vmin; height:25vmin; top:0; right:0; position:absolute;"-->
+			</div>
+			{% if download %}
+			<a href="{{download}}" download class="btn"><i class="fa fa-download"></i> Download</a>
+			{% elif copy %}
+			<script>
+				function copyfunc(){
+					navigator.clipboard.writeText('{{copy}}');
+					const copy = document.getElementById('copy');
+					copy.innerHTML = '<i class="fas fa-check"></i> Copied!';
+				}
+			</script>
+			<a id="copy" href="javascript: copyfunc()" class="btn"><i class="fa fa-copy"></i> Copy Code</a>
+			{% endif %}
+			<div class="filler"></div>
+		</div>
+		<div class="footer">
+			<p><b>COPYRIGHT 2022 ANONYMUSPIXEL</b><br>Do not steal my code, for I shall find you and put bananas on your pizza.</p>
+		</div>
+  </body>
+</html>

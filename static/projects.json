@@ -1,0 +1,92 @@
+{
+  "DeathShrine":{
+    "name":"DeathShrine",
+    "text":"DeathShrine is a Semi-Hardcore datapack that overhauls death in Minecraft. You'll respawn as a ghost (spectator mode) once you die. The only way to come back is by using a altar, which consist of a lectern holding a 'book of the undead'(See image)",
+		"category":"MC",
+    "features":[
+      "You will respawn as a ghost (in spectator mode) after you die.",
+      "You can respawn as a withering soul after using an altar (a lectern with a 'book of the undead')",
+			"Withering souls have various buffs, and debuffs"
+      ],
+			"version":"1.16",
+      "img":"img_ds.png",
+			"thumbnail":"thumbnail_ds.png",
+			"download":"DeathShrine.zip"
+  },
+  "EmeraldBanking":{
+    "name":"EmeraldBanking",
+    "text":"Emerald banking is a datapack which adds an option to safely store emeralds in Minecraft. To get the book (or purse), type '/function moneybank:give'. The deposited emeralds are stored in a scoreboard score, which allows for other datapacks to add more functionality to this quite simple datapack.",
+    "category":"MC",
+		"features":[
+      "Ability to safely store emeralds.",
+      "Withdrawing and Depositing emeralds via banking book."
+      ],
+			"version":"1.16",
+      "img":"img_bb.png",
+			"thumbnail":"thumbnail_bb.png",
+			"download":"EmeraldBanking.zip"
+  },
+  "Impossible+":{
+    "name":"Impossible+",
+    "text":"Impossible+ is a datapack which makes the game more difficult by adding multiple twists.",
+    "category":"MC",
+		"features":[
+      "The game is always on hard difficulty.",
+      "It is always night.",
+      "You actually get wounded on low hp. You will now be very slow and vision will be impaired when you are at 2 hearts or lower.",
+      "Drowning impairs vision, because that's how it works in real life, right?",
+      "Chickens are hostile and will attack you on sight.",
+      "Skeletons fly on bats.",
+      "Creepers explode instantly, are always charged and don't make any noise.",
+      "You can't sleep.",
+      "You cannot use beds in the end.",
+      "Armour slows you down (except leather).",
+      "You will slowly overheat in the nether. You will start taking damage 1 minute after entering. Overheating can be prevented by standing in a cauldron with water, but this will drain the water.",
+      "PAIN"
+      ],
+			"version":"1.19",
+      "img":"pholder.png",
+			"thumbnail":"pholder.png",
+			"download":"Impossible.zip",
+      "link":"https://commandgeek.squarespace.com/projects/impossible",
+      "ltext":"My inspiration for this project.",
+      "text2":"This idea was inspired by CommandGeek's 'Impossible 10x difficulty' and Fundy's series of difficulty modes. Please go check them out on youtube as they make great content."
+  },
+	"Space Gaem":{
+    "name":"Space Gaem",
+    "text":"Space Gaem is a small space shooter game I made for a school project, and my first serious attempt at working with kaboom.js. It is probably a bad, unoptimized and bug-ridden game, but at least it also was a learning experience. Beware as it may be VERY laggy on some devices",
+    "category":"GM",
+    "img":"img_sg.png",
+    "thumbnail":"thumbnail_sg.png",
+		"link":"https://spacegaem.anonymouspixel.repl.co",
+		"ltext":"You can play it here (Don't know why you'd willingly want to play this)."
+  },
+	"SOSF Site":{
+    "name":"SOSF Site",
+    "text":"A simple site I made for a discontinued BRM5 (Roblox game) faction. The site does lack some images but is quite polished. You can visit the site ",
+    "category":"ST",
+    "img":"img_sosf.png",
+    "thumbnail":"thumbnail_sosf.png",
+		"link":"https://sosf.anonymouspixel.repl.co",
+		"ltext":"HERE."
+  },
+	"VibeDotCheck":{
+    "name":"VibeDotCheck",
+    "text":"VibeDotCheck is a small project I started to familiarize myself with API's, as such it will probably not be updated or improved and is not intended for serious use. You can visit the site",
+    "category":"ST",
+    "img":"img_vdc.png",
+    "thumbnail":"thumbnail_vdc.png",
+		"link":"https://vibedotcheck.anonymuspixel.repl.co",
+		"ltext":"HERE.",
+    "text2":"VibeDotCheck is a free tool to easily find if people have reported someone. This site is not affiliated with Discord and reports made on this website are not relayed to Discord. Please make sure to report rulebreakers in Discord itself."
+  },
+	"Placeholder":{
+    "name":"Placeholder",
+    "text":"Just a placeholder project, nothing to see",
+    "category":"GH",
+    "img":"thumbnail_ds.png",
+    "thumbnail":"thumbnail_ds.png",
+		"link":"https://www.youtube.com/watch?v=fujCdB93fpw&t=0s",
+		"ltext":"here."
+  }
+}
