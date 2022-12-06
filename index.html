@@ -14,36 +14,18 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script src="https://kit.fontawesome.com/f8a6e1b6b2.js" crossorigin="anonymous"></script>
-    <script>  
-			window.onload = function(){
-				var acc = document.getElementsByClassName("accordion");
-				var i;
-				for (i = 0; i < acc.length; i++) {
-				  acc[i].addEventListener("click", function() {
-				    /* Toggle between adding and removing the "active" class,
-				    to highlight the button that controls the panel */
-				    this.classList.toggle("active");
-				    /* Toggle between hiding and showing the active panel */
-						let panel;				
-						let placeholder = this.nextElementSibling;				
-						while (placeholder) {
-						  if (placeholder.classList.contains('items')) {
-						    panel = placeholder;
-						    break;
-						  }
-						  placeholder = placeholder.nextElementSibling;
-						}		
-				    if (panel.style.maxHeight) {
-				      panel.style.maxHeight = null;
-				    } else {
-				      panel.style.maxHeight = panel.scrollHeight + "px";
-				    }
-				  });
-				}
-			}
-		</script>
 	</head>
 	<body>
+		<header class="w3-container w3-theme w3-padding" id="myHeader">
+		  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+		  <div class="w3-center">
+		  <h4>BEAUTIFUL RESPONSIVE WEB SITES</h4>
+		  <h1 class="w3-xxxlarge w3-animate-bottom">BUILT WITH W3.CSS</h1>
+			<div class="w3-padding-32">
+			  <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+			</div>
+		  </div>
+		</header>
 		<div class="footer">
 			<p><b>COPYRIGHT <span id="year"></span> <script>document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))</script>ANONYMUSPIXEL</b><br>Do not steal my code, for I shall find you and put bananas on your pizza.</p>
 		</div>
