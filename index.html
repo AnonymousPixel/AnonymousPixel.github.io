@@ -10,15 +10,15 @@
 		<meta name="author" content="Anonymuspixel">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>AnonymousPixel's Portfolio</title>
-    <link href="main.css" rel="stylesheet" type="text/css" />
+    	<title>AnonymousPixel's Portfolio</title>
+    	<link href="main.css" rel="stylesheet" type="text/css" />
 		<script src="https://kit.fontawesome.com/f8a6e1b6b2.js" crossorigin="anonymous"></script>
-  	<script>
+  		<script>
 		window.addEventListener('load', function () {
 			document.getElementById("year").innerHTML = new Date().getFullYear();
 		})
 		</script>
-    <script>  
+    	<script>  
 		window.onload = function(){
 			var acc = document.getElementsByClassName("accordion");
 			var i;
@@ -51,7 +51,7 @@
 	  <div class="topbar">
 			<a class="active">Projects</a>
 			|
-			<a href="{{ url_for('renderam') }}">About Me</a>
+			<a href="aboutme.html">About Me</a>
 			|
 			<a href="{{ url_for('random') }}">Random Project</a>
 	  </div>
