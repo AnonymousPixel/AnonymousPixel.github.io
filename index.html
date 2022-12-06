@@ -43,73 +43,9 @@
 			}
 		</script>
 	</head>
-  <body>
-		<div class="header">
-			<H1>AnonymousPixel</H1>
-		</div>
-    <div class="topbar">
-      <a class="active">Projects</a>
-      |
-      <a href="{{ url_for('renderam') }}">About Me</a>
-      |
-      <a href="{{ url_for('random') }}">Random Project</a>
-    </div>
-		<div class="content">
-			<p>
-				Welcome to my 'new & improved' project portfolio! This is where I'll archive all my finished 'projects'. This site is still under development.
-				<br>
-				Please do provide credit if you decide to use my projects/code for commercial purposes. Some projects already include credits.
-			</p>
-<h1>Projects:</h1>
-				<button class="accordion"><h2>Minecraft: Java Edition</h2></button>
-				<div class="items">
-					{% for p in projects %}
-					{% if projects[p]["category"] == "MC" %}
-					<a class="item" href="/project/{{projects[p]["name"]}}">
-						<h3>{{projects[p]["name"]}}</h3>
-						<img src="{{url_for("static",filename="Images/%s"%(projects[p]["thumbnail"]))}}"/>
-					</a>
-					{% endif %}
-        	{% endfor %}
-				</div>
-				<button class="accordion"><h2>Games</h2></button>			
-				<div class="items">
-					{% for p in projects %}
-					{% if projects[p]["category"] == "GM" %}
-					<a class="item" href="/project/{{projects[p]["name"]}}">
-						<h3>{{projects[p]["name"]}}</h3>
-						<img src="{{url_for("static",filename="Images/%s"%(projects[p]["thumbnail"]))}}"/>
-					</a>
-					{% endif %}
-        	{% endfor %}
-				</div>
-				<button class="accordion"><h2>Sites</h2></button>
-				<div class="items">
-					{% for p in projects %}
-					{% if projects[p]["category"] == "ST" %}
-					<a class="item" href="/project/{{projects[p]["name"]}}">
-						<h3>{{projects[p]["name"]}}</h3>
-						<img src="{{url_for("static",filename="Images/%s"%(projects[p]["thumbnail"]))}}"/>
-					</a>
-					{% endif %}
-        	{% endfor %}
-				</div>
-				<button class="accordion"><h2>Github</h2></button>
-				<div class="items">
-					{% for p in projects %}
-					{% if projects[p]["category"] == "GH" %}
-					<a class="item" href="/project/{{projects[p]["name"]}}">
-						<h3>{{projects[p]["name"]}}</h3>
-						<img src="{{url_for("static",filename="Images/%s"%(projects[p]["thumbnail"]))}}"/>
-					</a>
-					{% endif %}
-        	{% endfor %}
-				</div>
-				<div class="filler"></div>
-			</div>
-		</div>
+	<body>
 		<div class="footer">
 			<p><b>COPYRIGHT <span id="year"></span> <script>document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))</script>ANONYMUSPIXEL</b><br>Do not steal my code, for I shall find you and put bananas on your pizza.</p>
 		</div>
-  </body>
+ 	</body>
 </html>
