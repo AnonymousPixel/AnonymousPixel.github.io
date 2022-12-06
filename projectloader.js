@@ -1,4 +1,6 @@
-let projects = require("./Projects/projects.json");
+fetch('https://server.com/data.json')
+    .then((response) => response.json())
+    .then((json) => let projects = json);
 let MC = []
 let ST = []
 let GM = []
