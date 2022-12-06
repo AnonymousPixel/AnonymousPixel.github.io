@@ -1,4 +1,4 @@
-let projects = fetch('./projects/projects.json').json()
+let projects = require("./Projects/projects.json");
 let MC = []
 let ST = []
 let GM = []
