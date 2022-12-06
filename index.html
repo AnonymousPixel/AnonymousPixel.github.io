@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-	<meta name="title" content="Anonymuspixel's Portfolio">
-	<meta name="description" content="Welcome to my 'new & improved' project portfolio! This is where I'll archive all my finished 'projects'. This site is still under development.">
-	<meta name="keywords" content="Portfolio, Programming, Anonymouspixel, Projects">
-	<meta name="robots" content="index, follow">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="language" content="English">
-	<meta name="author" content="Anonymuspixel">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="title" content="Anonymuspixel's Portfolio">
+		<meta name="description" content="Welcome to my 'new & improved' project portfolio! This is where I'll archive all my finished 'projects'. This site is still under development.">
+		<meta name="keywords" content="Portfolio, Programming, Anonymouspixel, Projects">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="author" content="Anonymuspixel">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>AnonymousPixel's Portfolio</title>
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css" />
-	<script src="https://kit.fontawesome.com/f8a6e1b6b2.js" crossorigin="anonymous"></script>
-	<script src="{{ url_for('static', filename='scripts/screenBlock.js') }}"></script>
+		<script src="https://kit.fontawesome.com/f8a6e1b6b2.js" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static', filename='scripts/screenBlock.js') }}"></script>
   	<script>
 		window.addEventListener('load', function () {
 			document.getElementById("year").innerHTML = new Date().getFullYear();
 		})
-	</script>
+		</script>
     <script>  
 		window.onload = function(){
 			var acc = document.getElementsByClassName("accordion");
@@ -41,44 +41,40 @@
 						panel.style.maxHeight = panel.scrollHeight + "px";
 					}
 				});
-				}
 			}
+		}
 		</script>
 	</head>
   <body>
-	<div class="header">
-		<H1>AnonymousPixel</H1>
-	</div>
-    <div class="topbar">
-		<a class="active">Projects</a>
-		|
-		<a href="{{ url_for('renderam') }}">About Me</a>
-		  |
-		  <a href="{{ url_for('random') }}">Random Project</a>
-    </div>
-	<div class="content">
-		<p>
-		Welcome to my 'new & improved' project portfolio! This is where I'll archive all my finished 'projects'. This site is still under development.
-		<br>
-		Please do provide credit if you decide to use my projects/code for commercial purposes. Some projects already include credits.
-		</p>
-		<h1>Projects:</h1>
+		<div class="header">
+			<H1>AnonymousPixel</H1>
+		</div>
+	  <div class="topbar">
+			<a class="active">Projects</a>
+			|
+			<a href="{{ url_for('renderam') }}">About Me</a>
+			|
+			<a href="{{ url_for('random') }}">Random Project</a>
+	  </div>
+		<div class="content">
+			<p>
+			Welcome to my 'new & improved' project portfolio! This is where I'll archive all my finished 'projects'. This site is still under development.
+			<br>
+			Please do provide credit if you decide to use my projects/code for commercial purposes. Some projects already include credits.
+			</p>
+			<h1>Projects:</h1>
 			<button class="accordion"><h2>Minecraft: Java Edition</h2></button>
 			<div class="items">
-				{% for p in projects %}
-				{% if projects[p]["category"] == "MC" %}
 				<a class="item" href="/project/{{projects[p]["name"]}}">
 					<h3>{{projects[p]["name"]}}</h3>
 					<img src="{{url_for("static",filename="Images/%s"%(projects[p]["thumbnail"]))}}"/>
 				</a>
-				{% endif %}
-        		{% endfor %}
 			</div>
 			<div class="filler"></div>
+			</div>
 		</div>
-	</div>
-	<div class="footer">
-		<p><b>COPYRIGHT <span id="year"></span> ANONYMUSPIXEL</b><br>Do not steal my code, for I shall find you and put bananas on your pizza.</p>
-	</div>
+		<div class="footer">
+			<p><b>COPYRIGHT <span id="year"></span> ANONYMUSPIXEL</b><br>Do not steal my code, for I shall find you and put bananas on your pizza.</p>
+		</div>
   </body>
 </html>
