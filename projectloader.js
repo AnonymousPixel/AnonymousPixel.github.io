@@ -5,7 +5,7 @@ let MC = []
 let ST = []
 let GM = []
 
-function orderProjects(){
+function orderProjects(projects){
     for (project in projects){
         switch (project["category"]){
             case "MC":
