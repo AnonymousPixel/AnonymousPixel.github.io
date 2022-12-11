@@ -1,6 +1,6 @@
-fetch('https://server.com/data.json')
+fetch('https://anonymouspixel.github.io/Projects/projects.json')
     .then((response) => response.json())
-    .then((json) => let projects = json);
+    .then((json) => console.log(json));
 let MC = []
 let ST = []
 let GM = []
