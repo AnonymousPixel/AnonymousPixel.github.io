@@ -26,7 +26,7 @@ header{
 }
 @font-face {
   font-family: IBMPlexSans;
-  src: url(/Sources/IBMPlexSans.ttf);
+  src: url(../Fonts/IBMPlexSans.ttf);
 }
 header h1{
   margin:0;
