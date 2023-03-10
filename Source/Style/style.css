@@ -65,6 +65,7 @@ button:hover{
 .section img{
   width: calc(40vw - 50px);
   object-fit: cover;
+  margin-top: -3px;
 }
 .section .content{
   height:100%;
