@@ -60,7 +60,7 @@ button:hover{
   width:100vw;
   display: flex;
   justify-content:space-between;
-  background-color:#22223B;
+  background-color:#D8D4F2;
 }
 .section img{
   width: calc(40vw - 50px);
