@@ -85,7 +85,7 @@ button:hover{
   margin-left:20px;
 }
 .section:nth-child(even){
-  background-color:#73AB84;
+
 }
 .section:nth-child(even) .content{
   height:100%;
