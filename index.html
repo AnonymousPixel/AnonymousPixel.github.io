@@ -1,69 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" lang="en">
   <head>
-    <link rel="stylesheet" href="/Source/Style/style.css">
-    <script src="Source/Scripts/coolText.js"></script>
-    <!--<script src="Source/Scripts/navbar.js"></script>-->
-    <script defer src="Source/Scripts/year.js"></script>
-    <!--<script defer src="Source/Scripts/bars.js"></script>-->
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScottishPuffin</title>
+		<script async src="https://kit.fontawesome.com/2bfedb9754.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<!-- 		<link rel="shortcut icon" href="Sources/Images/LOGO_ROUND.ico" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://ptest.scottishpuffin.repl.co/Sources/Images/gb-sct.webp" />
+		<meta property="og:url" content="https://ptest.scottishpuffin.repl.co">
+		<meta property="og:title" content="ScottishPuffin's Portfolio">
+		<meta property="og:description" content="My personal portfolio website.">
   </head>
-  <body onload="main(['Naut van der Winden'],500,document.getElementById('ct1'));main(['Coffee addict','Dutch software development enthousiast'],5000,document.getElementById('ct2'))">
-    <header id="header">
-      <h1>SupposedBrit</h1>
-      <div class="navs">
-        <p id="s1">Section 1</p>
-        <p id="s2">Section 2</p>
-        <p id="s3">Section 3</p>
-        <p id="s4">Section 4</p>
-        <p id="s5">Section 5</p>
+  <body>
+		<div class="mobile-blocker">
+			<p>Your device is to small, please visit this site with a bigger screen.</p>
+		</div>
+    <div class="background-image"></div>
+    <script async src="Sources/Scripts/parallax.js"></script>
+		<div class="content">
+      <div class="header">
+        <h2>ScottishPuffin</h2>
       </div>
-    </header>
-    <main>
-      <div class="section" id="se1" >
-        <div class="content" style="width:100%;flex-direction: column;">
-          <h2 style="transform: rotate(0deg);">HI!</h2>
-          <p>I'm <span id="ct1">SupposedBrit</span>, a <span id="ct2">Hobbyist</span>.</p>
-          <button></button>
-        </div>   
-      </div>
-      <div class="section" id="se2">
-        <div class="content" style="width:100vw;">
-          <h2>My Skills</h2>
-          <p>I've learned to code from a young age, and am confident about my coding abilities in Python, CSS and HTML. I am also familiar with other coding languages like Java, Lua and Javascript. I do not possess any qualifications as of now, as I am currently attending the Havo (Dutch secondary education). </p>
-          <!--<div class="skills">
-            <div class="bar"><div class="innerBar" id="Java"><p>Java</p></div></div>
-            <div class="bar"><div class="innerBar" id="Python"><p>Python</p></div></div>
-            <div class="bar"><div class="innerBar" id="HTMLCSS"><p>HTML & CSS</p></div></div>
-            <div class="bar"><div class="innerBar" id="Java"></div></div>
-            <div class="bar"><div class="innerBar" id="Java"></div></div>
-            <div class="bar"><div class="innerBar" id="Java"></div></div>
-          </div>-->
+			<div class="data" style="background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.25) 25%, rgba(255, 0, 0, 0.5) 25%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 0, 0, 0.25) 50%, rgba(255, 0, 0, 0.25) 75%, rgba(255, 0, 0, 0.5) 75%, rgba(255, 0, 0, 0.5) 100%);
+background-size: 56.57px 56.57px;border: 1px dashed red;">
+				<H2>Notice</H2>
+				<p>This website is still under construction.</p>
+				<br>
+			</div>
+			<div class="data">
+				<h3 style="font-size:3ch;">Hi! Welcome to my portfolio website.</h3><h3 style="font-size:2ch;"> This is where I'll post/archive my projects. I'm currently attending secondary education, so I'm not available to hire. This is by no means a professional portfolio (yet), but feel free to look around.</h3>
+			</div>
+			<div class="data">
+				<H2>About Me</H2>
+				<p>Hi! I'm <u>Naut van der Winden</u> (WeeScottishPuffin), a software development enthusiast from the <u>Netherlands</u>. I'm passionate about software development, and have been since a young age. I'm currently attending <u>secondary education</u> in the Netherlands. <br><b>Previously known as:</b></p>
+        <div class="data-list">
+          <ul>
+            <li>SupposedBrit</li>
+            <li>ScottishPuffin</li>
+            <li>AnonymousPixel</li>
+          </ul>
         </div>
-      </div>
-      <div class="section" id="se3">
-        <div class="content">
-          <h2>Projects</h2>
-          <div class="projects"></div>
-        </div>
-        <img src="Source/Images/placeholder.jpg" alt="Placeholder image"/>
-      </div>
-      <div class="section" id="se4">
-        <img src="Source/Images/placeholder.jpg" alt="Placeholder image"/>
-        <div class="content">
-          <h2>Subtitle</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi odio, volutpat vel felis eu, ullamcorper molestie mi. Aliquam ut ex et felis laoreet convallis. Suspendisse semper convallis mauris vitae consequat. Cras scelerisque, elit vel mattis sollicitudin, est purus finibus eros, accumsan faucibus dui sapien in dolor. Vestibulum vestibulum, ipsum et viverra finibus, purus tellus ornare nisi, ut dignissim justo mi commodo orci. Vestibulum libero risus, mattis a justo eget, porttitor venenatis urna. Vivamus eu commodo lacus.</p>
-        </div>
-      </div>
-      <div class="section" id="se5">
-        <div class="content">
-          <h2>Subtitle</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi odio, volutpat vel felis eu, ullamcorper molestie mi. Aliquam ut ex et felis laoreet convallis. Suspendisse semper convallis mauris vitae consequat. Cras scelerisque, elit vel mattis sollicitudin, est purus finibus eros, accumsan faucibus dui sapien in dolor. Vestibulum vestibulum, ipsum et viverra finibus, purus tellus ornare nisi, ut dignissim justo mi commodo orci. Vestibulum libero risus, mattis a justo eget, porttitor venenatis urna. Vivamus eu commodo lacus.</p>
-        </div>
-        <img src="Source/Images/placeholder.jpg" alt="Placeholder image"/>
-      </div>
-    </main>
-    <footer>
-      <p><b>COPYRIGHT <span id="year"></span> ANONYMOUSPIXEL</b><br>Do not steal my code, for I shall find you and put bananas on your pizza.</p>
-    </footer>
+			</div>
+			<img alt="" src="Sources/placeholder.webp" class="filler"/>
+			<div class="data">
+				<H2>My Skills</H2>
+				<p>I've learned to code from a young age, and am confident in my coding abilities in Python, CSS and HTML. I am also familiar with other coding languages like Java, Lua and Javascript. I do not possess any qualifications as of now, as I am currently attending the Havo (Dutch secondary education).</p>
+			</div>
+			<img alt="" src="Sources/placeholder.webp" class="filler"/>
+			<div class="data">
+				<H2>Projects</H2>
+				<p>A selection of projects I've worked on in the past</p>
+				<div class="flexcontainer">
+					<div class="project">
+						<img alt="" src="Sources/placeholder.webp"/>
+						<p><b>Swoop</b><br>Commander of the SOSF<br><br>"Wood fired pizza? How's pizza gonna get a job now?"</p>
+					</div>	
+				</div>
+			</div>
+			<img alt="" src="Sources/placeholder.webp" class="filler"/>
+			<div class="data">
+				<H2>Contact</H2>
+				<div class="data-list">
+					<ul style="list-style-type: none;">
+						<li><i class="fab fa-discord"> </i>  Discord: WeeScottishPuffin#7897</li>
+						<li><i class="fas fa-user-alt"></i>  Github: WeeScottishPuffin</li>
+						<li><i class="fas fa-envelope"></i>  Mail: SupposedBrit@gmail.com</li>
+					</ul>
+				</div>
+			</div>
+      <div class="footer">
+		    <p>COPYRIGHT 2023 SCOTTISHPUFFIN<br>Do not steal my code, for I shall find you and put bananas on your pizza.</p>
+	    </div>
+		</div>
+	</div>
   </body>
 </html>
