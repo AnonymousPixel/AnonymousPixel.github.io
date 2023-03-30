@@ -26,13 +26,10 @@
 	overflow-x:hidden;
   font-family:Cousine;
   font-weight:normal;
-<<<<<<< HEAD
 }
 p,li{
   font-family: Arial;
   font-weight:500;
-=======
->>>>>>> origin/main
 }
 *::selection{
 	display:none;
@@ -242,7 +239,6 @@ h3{
 	z-index:1;
 	text-decoration:underline;
 }
-<<<<<<< HEAD
 
 @media all and (max-width:500px) {
   .content{
@@ -276,5 +272,3 @@ h3{
     width:45%;
   }
 }
-=======
->>>>>>> origin/main
