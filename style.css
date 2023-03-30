@@ -16,15 +16,6 @@
 	margin:auto;
 }
 
-@media all and (max-width:550px) {
-   .mobile-blocker {
-       display:block;
-			 visibility:visible;
-   }
-}
-
-
-
 @font-face {
   font-family:Cousine;
   src:url(Sources/Fonts/Cousine.ttf);
@@ -35,6 +26,13 @@
 	overflow-x:hidden;
   font-family:Cousine;
   font-weight:normal;
+<<<<<<< HEAD
+}
+p,li{
+  font-family: Arial;
+  font-weight:500;
+=======
+>>>>>>> origin/main
 }
 *::selection{
 	display:none;
@@ -69,7 +67,7 @@ body{
   position: fixed;
   right: 0;
   height:100vh;
-  background-size:200%;
+  background-size:200% 200%;
   background-repeat: repeat;
   background-position: 50% 50%;
   z-index: 1;
@@ -78,7 +76,7 @@ body{
 }
 .content{
   position:relative;
-  width:min(80vw,1000px);
+  width:max(min(80vw,1000px));
   padding:15px;
 	margin:auto;
 	text-align:center;
@@ -145,11 +143,12 @@ body{
   align-items: center;
   justify-content: center;
 	width:calc(100% + 30px);
-	margin-top:100px;
   margin-bottom:-15px;
   margin-left:-15px;
 	height:max(75px,min(2vw,150px));
 	text-align:center;
+}
+.footer p{
 	font-family:Cousine;
 }
 .header{
@@ -180,34 +179,42 @@ h3{
 	font-size:5ch;
 }
 .project{
+  display:none;
 	cursor:pointer;
 	margin:1vw;
-	transition:1s;
-	width:max(300px,30vw);
-	height:max(350px,35vw);
 	background-color:rgba(80, 80, 80, 0.5);
 	border-color:rgb(30,30,30);
 	border-style:solid;
 	border-width:2px;
-	border-radius:50px;
+	border-radius:5px;
+  aspect-ratio:0.75;
 }
-.project:hover{
-	transition:1s;
-	background-color:rgb(30,30,30);
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.project img{
-	width:100%;
-	height:10vw;
-	background-color:white;
-	overflow: hidden;
-  border-bottom: rgb(30,30,30),solid,2px;
+.link{
+  text-decoration:underline;
+  cursor:pointer;
 }
 .project p{
-	margin:1vw;
+	width:100%;
+  bottom:0;
+  padding:auto;
+  font-family:Cousine;
+	overflow: hidden;
 }
-.project p b{
-	font-size:24;
-	text-decoration:underline;
+.project img{
+  width:100%;
+  aspect-ratio: 1;
 }
 .topimg{
 	width:100vw;
@@ -235,3 +242,39 @@ h3{
 	z-index:1;
 	text-decoration:underline;
 }
+<<<<<<< HEAD
+
+@media all and (max-width:500px) {
+  .content{
+    width:100vw;
+  }
+}
+
+@media all and (max-width:750px) {
+  .project{
+    display: none;
+    width:75%;
+  }
+  .prev{
+    padding:0;
+    margin-left:5px;
+    margin-right:5px;
+  }
+  .next{
+    padding:0;
+    margin-left:5px;
+    margin-right:5px;
+  }
+}
+
+@media all and (min-width:751px) {
+  .prev,.next{
+    display:none;
+  }
+  .project{
+    display:block;
+    width:45%;
+  }
+}
+=======
+>>>>>>> origin/main
