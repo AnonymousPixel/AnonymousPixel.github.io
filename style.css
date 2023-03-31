@@ -1,21 +1,3 @@
-.mobile-blocker {
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  z-index:100001;
-  background:royalblue;
-  color:#fff;
-  text-align:center;
-  display:none;
-	visibility:hidden;
-}
-.mobile-blocker p{
-	text-align:center;
-	margin:auto;
-}
-
 @font-face {
   font-family:Cousine;
   src:url(Sources/Fonts/Cousine.ttf);
@@ -90,9 +72,7 @@ body{
   background-color:rgb(60,60,60);
 	text-align:center;
 	align-content: center;
-	color:white;
-	margin-bottom:50px;
-  
+	color:white;  
 }
 .data h2{
 	color:white;
@@ -122,6 +102,7 @@ body{
 	font-size:1.25em;
 }
 .filler {
+  margin-top:20px;
 	width: 100vw;
 	background-color:rgb(50,50,50);
 	height: calc(100vh - calc(100vw * 0.41797));
@@ -144,6 +125,7 @@ body{
   margin-left:-15px;
 	height:max(75px,min(2vw,150px));
 	text-align:center;
+  margin-top:50px;
 }
 .footer p{
 	font-family:Cousine;
@@ -154,12 +136,12 @@ body{
   width:calc(100% + 30px);
   margin-left:-15px;
   margin-bottom:15px;
-  height:100px;
+  height:calc(5ch + 30px);
   display: flex;
   justify-content: left;
 }
 .header h2{
-  margin-left:10px;
+  margin-top: 15px;
   font-size:5ch;
 }
 h2{
@@ -201,6 +183,13 @@ h3{
 .link{
   text-decoration:underline;
   cursor:pointer;
+  color:white;
+}
+.header img{
+  margin-top:0;
+  height:100%;
+  width:auto;
+  top:0;
 }
 .project p{
 	width:100%;
@@ -243,6 +232,16 @@ h3{
 @media all and (max-width:500px) {
   .content{
     width:100vw;
+    padding:0;
+  }
+}
+
+@media all and (max-width:600px) {
+  .header img{
+    display:none;
+  }
+  .header h2{
+    margin-left:25px;
   }
 }
 
@@ -260,6 +259,10 @@ h3{
     padding:0;
     margin-left:5px;
     margin-right:5px;
+  }
+  .flexcontainer{
+    grid-template-columns: 1fr 5fr 1fr;
+    flex-wrap: nowrap;
   }
 }
 
