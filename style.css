@@ -14,7 +14,7 @@ p,li{
   font-weight:500;
 }
 *::selection{
-	display:none;
+	background-color:#2C052E;
 }
 ::-webkit-scrollbar {
   width:0px;
@@ -120,7 +120,7 @@ body{
   margin-top:20px;
 	width: 100vw;
 	background-color:rgb(50,50,50);
-	height: calc(100vh - calc(100vw * 0.41797));
+	aspect-ratio: 5;
 }
 .flexcontainer {
 	display:flex;
