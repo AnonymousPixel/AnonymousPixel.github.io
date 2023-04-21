@@ -274,6 +274,9 @@ i{
     width:100vw;
     padding:0;
   }
+  .filler{
+    display:none;
+  }
 }
 
 @media all and (max-width:600px) {
