@@ -160,6 +160,7 @@ body{
   height:calc(5ch + 30px);
   display: flex;
   justify-content: left;
+  overflow: hidden;
 }
 .header h2{
   margin-top: 15px;
