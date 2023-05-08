@@ -209,10 +209,19 @@ i{
   user-select: none;
 }
 .link{
-  text-decoration:underline;
   cursor:pointer;
   color:white;
+  text-decoration-color: rgba(0, 0, 255, 1);
+  text-underline-offset: 0.4em;
+  text-decoration: underline 0.15em;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
+
+.link:hover {
+  text-decoration-color: white;
+  text-underline-offset: 0.2em;
+}
+
 .header img{
   margin-top:0;
   height:100%;
